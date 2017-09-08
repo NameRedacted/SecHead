@@ -1,0 +1,12 @@
+{
+  "x-xss-protection" : [{
+    "name" : "X-XSS-Protection",
+    "regex" : "(\\d+)\\s*;?\\s*([a-zA-Z]+)?\\s*=?\\s*\"?([a-zA-Z0-9:/.]+)\"?",
+    "params" : [{
+      "0" : "Filter disabled.",
+      "1" : "Filter enabled. If a cross-site scripting attack is detected, in order to stop the attack, the browser will sanitize the page.",
+      "mode" : "Filter enabled. Rather than sanitize the page, when a XSS attack is detected, the browser will prevent rendering of the page.",
+      "report" : "Filter enabled. The browser will sanitize the page and report the violation. This is a Chromium function utilizing CSP violation reports to send details to a URI of your choice."
+    }]
+  }]
+}
